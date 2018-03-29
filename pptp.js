@@ -19,8 +19,8 @@ let sec = 0;
 let now = 0;
 let datet = 0;
 let time;
-const team = ['ポ', 'プ', 'テ', 'ピ', 'ッ', 'ク'];
-const team2 = ['ポ', 'プ', 'テ', 'ピ', 'ク'];
+const team = ['ナ', 'ポ', 'ア', 'ン', 'の', 'ク'];
+const team2 = ['マ', 'イ', 'ク', 'ラ', 'ク'];
 //よく分からんのでとりあえず即時関数
 const take = (() => {
     const aa = [
@@ -77,29 +77,29 @@ function pptp() {
             pipimi.textContent += team[getRandomInt(5)];;
         }
         result.innerHTML = `ポプが出来た回数:${popu}<br>
-ポプテが出来た回数:${popute}<br>
-ポプテピが出来た回数:${poputepi}<br>
-ポプテピピが出来た回数:${poputepi2}<br>
-ポプテピピッが出来た回数:${poputepi2ltu}<br>
+ナポが出来た回数:${popute}<br>
+ナポアが出来た回数:${poputepi}<br>
+ナポアンのマが出来た回数:${poputepi2}<br>
+ナポアンのマイクが出来た回数:${poputepi2ltu}<br>
 経過時間:${time}<br>
 `;
 
-        if (pipimi.textContent.endsWith('ポプ')) {
+        if (pipimi.textContent.endsWith('ナポ')) {
             popu++;
         }
-        if (pipimi.textContent.endsWith('ポプテ')) {
+        if (pipimi.textContent.endsWith('ナポア')) {
             popute++;
         }
-        if (pipimi.textContent.endsWith('ポプテピ')) {
+        if (pipimi.textContent.endsWith('ナポアン')) {
             poputepi++;
         }
-        if (pipimi.textContent.endsWith('ポプテピピ')) {
+        if (pipimi.textContent.endsWith('ナポアンの')) {
             poputepi2++;
         }
-        if (pipimi.textContent.endsWith('ポプテピピッ')) {
+        if (pipimi.textContent.endsWith('ナポアンのマ')) {
             poputepi2ltu++;
         }
-        if (pipimi.textContent.endsWith('ポプテピピック')) {
+        if (pipimi.textContent.endsWith('ナポアンのマイク')) {
             button.disabled = false;
             button.style.visibility = 'visible';
             clearInterval(pop);
